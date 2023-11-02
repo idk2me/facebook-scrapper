@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup as bs
 
+
+# Still work in progress
 class Data():
     def __init__(self, box: str):
         self.box = bs(box, 'html.parser')
