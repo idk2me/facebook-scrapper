@@ -21,7 +21,7 @@ class Nonce:
         sleep(1)
         button.click()
         sleep(1)
-        script = driver.find_elements('css selector', '.prettyprint._3t10.prettyprinted').text
+        script = driver.find_elements('css selector', '.prettyprint._3t10.prettyprinted')[0].text
         driver.quit()
         data = Data(script)
         return data.get_nonce()
